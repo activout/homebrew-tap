@@ -4,7 +4,7 @@ name: Update formulas
 # Run it by hand (Actions > Update formulas > Run workflow) to pick up a release right away.
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 3 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -29,7 +29,7 @@ jobs:
       - name: Find changed formulas
         id: changed
         run: |
-          names=$(git status --porcelain Formula | sed -E 's|.*Formula/(.*)\.rb|\1|' | tr '\n' ' ')
+          names=$(git status --porcelain --untracked-files=all Formula | sed -E 's|.*Formula/(.*)\.rb|\1|' | tr '\n' ' ')
           echo "names=$names" >> "$GITHUB_OUTPUT"
           echo "Changed: ${names:-none}"
 
