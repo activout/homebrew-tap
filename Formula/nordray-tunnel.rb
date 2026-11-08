@@ -2,25 +2,25 @@
 class NordrayTunnel < Formula
   desc "Self-hosted HTTP tunnels in your own Bunny account"
   homepage "https://github.com/activout/nordray-tunnel"
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.0/nordray-tunnel_v1.0.0_darwin_arm64"
-      sha256 "4c44810cf492f798bb1eff614f310d55ac7dd9f6a4ee7213f2b614ebe5212c9e"
+      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.1/nordray-tunnel_v1.0.1_darwin_arm64"
+      sha256 "fa491a9478125f27bb70f58b7868c6dfd1bc23605f72b0eb31f44b5d90b3cc32"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.0/nordray-tunnel_v1.0.0_linux_arm64"
-      sha256 "589d1f6f2f42bbccc26058e41f0c7cdd54cb9f6fdc294ff94fc0bf791ae6b8fb"
+      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.1/nordray-tunnel_v1.0.1_linux_arm64"
+      sha256 "2fe7dc9adcf6f773d8b9061af3a6e1d40deef04dc668d65e94deeae4803b0b7d"
     end
     on_intel do
-      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.0/nordray-tunnel_v1.0.0_linux_amd64"
-      sha256 "40eec47b099cacc71ac2b652ee14608aeefdd9a1ea96129f7afb723d8786e993"
+      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.1/nordray-tunnel_v1.0.1_linux_amd64"
+      sha256 "adfd2f8b684c1554622200edfbb660a39032ad30f9e603d62b2763c3eb28e157"
     end
   end
 
