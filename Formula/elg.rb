@@ -6,13 +6,10 @@ class Elg < Formula
   license "MIT"
 
   on_macos do
+    depends_on arch: :arm64
     on_arm do
       url "https://github.com/activout/elg/releases/download/v0.2.0/elg_v0.2.0_darwin_arm64.tar.gz"
       sha256 "4c94437813046ca5399d0a1c4d77228e11a46643dd762a21077d5802690dadb4"
-    end
-    on_intel do
-      url "https://github.com/activout/elg/releases/download/v0.2.0/elg_v0.2.0_darwin_amd64.tar.gz"
-      sha256 "7ba4d12a71326c8cce77286c97b8bd0068e919b0bc2a777688202da02b031a8d"
     end
   end
 

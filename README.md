@@ -8,8 +8,8 @@ brew install activout/tap/elg
 
 | Formula | What it does | Platforms |
 |---|---|---|
-| [`elg`](https://github.com/activout/elg) | Unofficial CLI for GleSYS email hosting, DNS and servers | macOS, Linux (Intel and ARM) |
-| [`nordray-tunnel`](https://github.com/activout/nordray-tunnel) | Self-hosted HTTP tunnels in your own Bunny account | macOS, Linux (Intel and ARM) |
+| [`elg`](https://github.com/activout/elg) | Unofficial CLI for GleSYS email hosting, DNS and servers | macOS (Apple Silicon), Linux (Intel and ARM) |
+| [`nordray-tunnel`](https://github.com/activout/nordray-tunnel) | Self-hosted HTTP tunnels in your own Bunny account | macOS (Apple Silicon), Linux (Intel and ARM) |
 | [`blue5`](https://github.com/activout/Activout.Blue5) | Unofficial read-only CLI for the Bluestone PIM Public API | macOS (Apple Silicon), Linux (Intel) |
 | [`content-scheduler`](https://github.com/activout/Activout.C9.Scheduler) | Reconciles cron-based publish rules into Contentful Scheduled Actions | macOS (Apple Silicon), Linux (Intel) |
 | [`bank`](https://github.com/activout/Activout.Banking) | Archives and exports your own bank transactions via Enable Banking | macOS (Apple Silicon), Linux (Intel) |

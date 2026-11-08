@@ -4,7 +4,8 @@ import os
 import urllib.request
 
 # (Homebrew os, Homebrew arch) -> the release's (os, arch) names
-GO = {("macos", "arm"): ("darwin", "arm64"), ("macos", "intel"): ("darwin", "amd64"),
+# Intel Macs are not supported: Apple stopped selling them in 2023 and macOS 26 is their last release.
+GO = {("macos", "arm"): ("darwin", "arm64"),
       ("linux", "arm"): ("linux", "arm64"), ("linux", "intel"): ("linux", "amd64")}
 DOTNET = {("macos", "arm"): ("osx", "arm64"), ("linux", "intel"): ("linux", "x64")}
 

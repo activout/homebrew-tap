@@ -6,13 +6,10 @@ class NordrayTunnel < Formula
   license "Apache-2.0"
 
   on_macos do
+    depends_on arch: :arm64
     on_arm do
       url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.0/nordray-tunnel_v1.0.0_darwin_arm64"
       sha256 "4c44810cf492f798bb1eff614f310d55ac7dd9f6a4ee7213f2b614ebe5212c9e"
-    end
-    on_intel do
-      url "https://github.com/activout/nordray-tunnel/releases/download/v1.0.0/nordray-tunnel_v1.0.0_darwin_amd64"
-      sha256 "c0de5f5f73acf3be7828085f35600c08ab2d166a7ede916d17e9974698067743"
     end
   end
 
