@@ -21,7 +21,9 @@ an untrusted tap, run `brew trust activout/tap`.
 ## How the formulas are updated
 
 `Formula/` is generated: do not edit it by hand. [`update.py`](update.py) lists the CLIs and writes each formula from
-the project's latest GitHub release. The [Update formulas](.github/workflows/update.yml) workflow runs it every night,
+the project's latest GitHub release, after checking that every binary matches the release's checksum file and has
+GitHub build provenance from that project (`gh attestation verify`). A release that fails either check stops the run
+and is not published. The [Update formulas](.github/workflows/update.yml) workflow runs it every night,
 installs and tests every formula that changed, and commits the result. A new release therefore reaches the tap by the next
 morning, without a token or step in the CLI's own repository. Run the workflow by hand to pick up a release at once.
 
