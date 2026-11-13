@@ -2,25 +2,25 @@
 class Elg < Formula
   desc "Unofficial CLI for GleSYS email hosting, DNS and servers"
   homepage "https://github.com/activout/elg"
-  version "0.2.2"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/activout/elg/releases/download/v0.2.2/elg_v0.2.2_darwin_arm64.tar.gz"
-      sha256 "44349a65dbec60f6b722bcb3f89b88fa836e3d9a110dd6476e32341970624eb8"
+      url "https://github.com/activout/elg/releases/download/v0.3.0/elg_v0.3.0_darwin_arm64.tar.gz"
+      sha256 "c81163aa8ad2383b59ee865722b3329d6d903956e8f985bc32d6825fc36145d8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/activout/elg/releases/download/v0.2.2/elg_v0.2.2_linux_arm64.tar.gz"
-      sha256 "2187b4b640da632022feef40669d8eb604e907f585480deb50e55a8733d737b9"
+      url "https://github.com/activout/elg/releases/download/v0.3.0/elg_v0.3.0_linux_arm64.tar.gz"
+      sha256 "febb49ccc8b6bb1f02e84412711267b86ee1eec870704d864c72178119e98926"
     end
     on_intel do
-      url "https://github.com/activout/elg/releases/download/v0.2.2/elg_v0.2.2_linux_amd64.tar.gz"
-      sha256 "3005fafd450e70626c341764270d0190d3e591958fbf28a76c4bddad8e643eb0"
+      url "https://github.com/activout/elg/releases/download/v0.3.0/elg_v0.3.0_linux_amd64.tar.gz"
+      sha256 "8b398c7e7b06e48a8f7a4f86095e90edceb86e469e30c6273a243bcc2cede7d1"
     end
   end
 
